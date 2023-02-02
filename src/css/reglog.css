@@ -1,0 +1,23 @@
+
+button {
+    background-color: #45a049;
+    width: 30%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 100px;
+  }
+.form {
+  background-color: black;
+  text-align: center;
+  width: 100%;
+  color: white;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+
+
+}
