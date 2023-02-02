@@ -61,10 +61,11 @@ h1{
 .header{
   text-align: center;
   margin-left: 50px;
+  padding-left: 80px;
 }
 .nav{
-  color: black;
-  
+  color: rgb(0, 0, 0);
+  padding: 90px;
   
 }
 

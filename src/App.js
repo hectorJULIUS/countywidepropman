@@ -8,6 +8,8 @@ import DashBoard from './DashBoard';
 import { useState } from 'react';
 import Table from './Table';
 import Footer from './Footer';
+import Services from './Services.js';
+import ContactUs from './ContactUs.js';
 
 
 
@@ -24,11 +26,14 @@ function App() {
 
       <Routes>
         <Route path="/About" element ={<About/>} />
+        <Route path="/Services" element ={<Services/>} />
+        <Route path="/ContactUs" element ={<ContactUs/>} />
         <Route path="/" element ={<Home/>} />
         <Route path="/login" element ={<Login loginStatus={{isLoggedIn ,setIsLoggedIn }}/>} />
         <Route path="/Register" element ={<Register/>} />
         <Route path="/dashboard" element={<DashBoard logoutStatus={{isLoggedOut ,setIsLoggedOut }}/>}/>
         <Route path ="/Table" element={<Table/>}/>
+
       </Routes>
       <Footer/>
     </div>

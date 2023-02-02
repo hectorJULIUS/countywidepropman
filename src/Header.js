@@ -25,8 +25,8 @@ function Header(){
         <Typography className=' header'>
         <Typography sx={{mx:5 , alignItems:'center'}} variant="h8" ><Link className='list' to="/">Home</Link></Typography>
         <Typography sx={{mx:5}} variant="h8"><Link className='list' to="/About">About</Link></Typography>
-        <Typography sx={{mx:5}} variant="h8"><Link className='list' to="#">Services</Link></Typography>
-        <Typography sx={{mx:5}} variant="h8"><Link className='list' to="#">ContactUs</Link></Typography>
+        <Typography sx={{mx:5}} variant="h8"><Link className='list' to="/Services">Services</Link></Typography>
+        <Typography sx={{mx:5}} variant="h8"><Link className='list' to="/ContactUs">ContactUs</Link></Typography>
         </Typography>
 
       <Typography>
