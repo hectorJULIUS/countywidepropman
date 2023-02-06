@@ -3,9 +3,9 @@ import {useState} from 'react';
 import './css/reglog.css';
 import { useNavigate } from 'react-router-dom';
 import Button  from '@mui/material/Button';
-import {Link} from 'react-router-dom';
-import { TextField } from '@mui/material';
+import { Card, CardContent, TextField , Link} from '@mui/material';
 import { Box } from '@mui/system';
+import {Link as RouterLink} from "react-router-dom"
 
 function LogIn(props) {
   const navigate = useNavigate();
@@ -28,10 +28,13 @@ function LogIn(props) {
     noValidate
     autoComplete="off"
   >
+
       <div className='login'>
+        <Card>
       {/* {console.log(props.loginStatus)} */}
     
       <h1>Login</h1>
+      <CardContent>
 
       <TextField
           required
@@ -40,6 +43,7 @@ function LogIn(props) {
           value={Username} onChange={e => setUsername(e.target.value)} type="text"
           defaultValue="Username"
         /> <br/>
+        <br/>
       
         
       <TextField
@@ -48,14 +52,18 @@ function LogIn(props) {
           value={password} onChange={e => setPassword(e.target.value)} type="password"
           autoComplete="current-password"
         /> <br/>
+        <br/>
 
-      <Button variant="contained"type='submit' >Login</Button> 
+      <Button  variant="contained"type='submit' >Login</Button> 
       <br/>
       
-      <Link className='forget' to="#">forget Password</Link>
+      <h5>Forgot Password?  <Link component= { RouterLink} to="#">Click Here!</Link> </h5>
+     
+
+      </CardContent>
     
     
-      
+      </Card>
     </div>
   </Box>
   

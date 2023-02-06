@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './css/reglog.css';
-import { Button } from '@mui/material';
+import { Button, Card, CardContent } from '@mui/material';
 import { Box } from '@mui/system';
 import { TextField } from '@mui/material';
 
@@ -23,6 +23,8 @@ function Register() {
     autoComplete="off"
   >
     <div className='login'>
+      <Card>
+        <CardContent>
       
        <h1>Register Now</h1>
     
@@ -34,6 +36,7 @@ function Register() {
           value={Username} onChange={e => setUsername(e.target.value)} type="text"
           defaultValue="Username"
         /> <br/>
+        <br/>
 
         <TextField
           required
@@ -43,6 +46,7 @@ function Register() {
           defaultValue="Email"
         />
         <br/>
+        <br/>
       
         
       <TextField
@@ -51,9 +55,10 @@ function Register() {
           value={password} onChange={e => setPassword(e.target.value)} type="password"
           autoComplete="current-password"
         />
-        <br/>
+        <br/> <br/>
       <Button variant="outlined" type='submit'>SignUp </Button>
-    
+      </CardContent>
+      </Card>
     </div>
     </Box>
   )

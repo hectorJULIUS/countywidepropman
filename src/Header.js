@@ -18,8 +18,9 @@ function Header(){
       <Toolbar  >
         
         <Typography className='logo'>
-        <h2> <AssuredWorkloadIcon/>  CountyWide <br/>
-         Property Management</h2>
+        <Link className='list' to="/"><h2> <AssuredWorkloadIcon/>  CountyWide <br/>
+         Property Management</h2></Link>
+        
         </Typography>
 
         <Typography className=' header'>
