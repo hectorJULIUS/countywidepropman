@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import Button  from '@mui/material/Button';
 import { Card, CardContent, TextField , Link} from '@mui/material';
 import { Box } from '@mui/system';
-import {Link as RouterLink} from "react-router-dom"
+import {Link as RouterLink} from "react-router-dom";
 
 function LogIn(props) {
   const navigate = useNavigate();
@@ -29,7 +29,7 @@ function LogIn(props) {
     autoComplete="off"
   >
 
-      <div className='login'>
+      <div className='login' >
         <Card>
       {/* {console.log(props.loginStatus)} */}
     
