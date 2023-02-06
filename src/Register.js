@@ -10,7 +10,7 @@ function Register() {
   const [password, setPassword]= useState('');
   const signUp = e =>{
     e.preventDefault();
-    console.log("You clicked Me");
+    console.log(Username , email , password);
   }
   return (
     <Box  className='box'
