@@ -5,19 +5,24 @@ import ImageSection from './ImageSection';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import AssuredWorkloadIcon from '@mui/icons-material/AssuredWorkload';
+import About from './About';
+import Services from './Services';
 
 
 
 function Home() {
   return (
     
-    <div>
+    <div className='MAIN'>
       <container>
       
       <ImageSection/>
+      <About/>
+      <Services/>
+
       </container>
       
-      <h1>services we offer</h1>
+      
 
 
 

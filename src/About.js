@@ -1,24 +1,78 @@
+import { Container } from '@mui/material'
 import React from 'react'
 import ImageSection from './ImageSection'
+import './css/Header.css';
+import rep from './images/rep.jpg';
 
 function About() {
   return (
-    <div>
+    <div className='MAIN' >
+      <hr></hr>
       <h1>About Us</h1>
+     <div className='about'>
+      
+     <div className='divr'>
+     <p>
+     We used position: fixed for our nav bar because it will be displayed on top and if in case our web page goes longer than the complete view port (i.e the device screen), it will stick to the top so that we can view the change of active class even after that. margin: 0 auto; aligns the item horizontally on center. Other styles are transitions, colors and li tag styling. Those are very repeating things. display: inline-block; makes the list items to take minimal space.
+
+      Similarly, if you take closer look, we also made a .active class. Did you notice we have not declared any active class in above code but we actually gave style to this class. What’s the point? we will use this shortly. For now be informed that we made this so we can add and manipulate this class with jQuery later. For now lets see what we made till now:
+
+
+     </p>
+
+     </div>
+     <div className='divl'>
+
+     <img className='img' src={rep}/>
+      
+
+     </div>
+     </div>
+
+     <div className='about'>
+
+     <div className='divl'>
+ 
+ <img className='img' src={rep}/>
+  
+
+ </div>
+      
+      <div className='divr'>
       <p>
-      Property management is the operation, control, maintenance, and oversight of real estate and physical property. This can include residential, commercial, and land real estate. Management indicates the need for real estate to be cared for and monitored, with accountability for and attention to its useful life and condition. This is much akin to the role of management in any business.
-
-Property management is the management of personal property, equipment, tooling, and physical capital assets acquired and used to build, repair, and maintain end item deliverables. Property management involves the processes, systems, and workforce required to manage the life cycle of all acquired property as defined above, including acquisition, control, accountability, responsibility, maintenance, utilization, and disposition.
-
-An owner of a single-family home, condominium, or multi-family building may engage the services of a professional property management company. The company will then advertise the rental property, handle tenant inquiries, screen applicants, select suitable candidates, draw up a lease agreement, conduct a move-in inspection, move the tenant(s) into the property and collect rental income. The company will then coordinate any maintenance issues, supply the owner(s) with financial statements and any relevant information regarding the property, etc.
+      We used position: fixed for our nav bar because it will be displayed on top and if in case our web page goes longer than the complete view port (i.e the device screen), it will stick to the top so that we can view the change of active class even after that. margin: 0 auto; aligns the item horizontally on center. Other styles are transitions, colors and li tag styling. Those are very repeating things. display: inline-block; makes the list items to take minimal space.
+ 
+       Similarly, if you take closer look, we also made a .active class. Did you notice we have not declared any active class in above code but we actually gave style to this class. What’s the point? we will use this shortly. For now be informed that we made this so we can add and manipulate this class with jQuery later. For now lets see what we made till now:
+ 
+ 
       </p>
+ 
+      </div>
+      
+      </div>
 
-      <p>
-      Property management is the daily oversight of residential, commercial, or industrial real estate by a third-party contractor. Generally, property managers take responsibility for day-to-day repairs and ongoing maintenance, security, and upkeep of properties. They usually work for the owners of investment properties such as apartment and condominium complexes, private home communities, shopping centers, and industrial parks.
+      <div className='about'>
+      
+     <div className='divr'>
+     <p>
+     We used position: fixed for our nav bar because it will be displayed on top and if in case our web page goes longer than the complete view port (i.e the device screen), it will stick to the top so that we can view the change of active class even after that. margin: 0 auto; aligns the item horizontally on center. Other styles are transitions, colors and li tag styling. Those are very repeating things. display: inline-block; makes the list items to take minimal space.
 
-Their main roles are to manage routine tasks delegated to them by the owners and to preserve the value of the properties that they manage while generating income.
-      </p>
-      <ImageSection/>
+      Similarly, if you take closer look, we also made a .active class. Did you notice we have not declared any active class in above code but we actually gave style to this class. What’s the point? we will use this shortly. For now be informed that we made this so we can add and manipulate this class with jQuery later. For now lets see what we made till now:
+
+
+     </p>
+
+     </div>
+     <div className='divl'>
+
+     <img className='img' src={rep}/>
+      
+
+     </div>
+     </div>
+     
+    
+
     </div>
   )
 }

@@ -72,6 +72,24 @@ h1{
 .logbtn{
   align-content: center;
 }
+.about{
+  display: flex;
+  margin-top: 100px;
+  
+}
+.divr{
+  width: 60%;
+  height: 30vh;
+}
+.divl{
+  width: 40%;
+}
+.divl .img {
+  height: 30vh;
+}
+.MAIN{
+  background-color: #f8801710;
+}
 
 
   
