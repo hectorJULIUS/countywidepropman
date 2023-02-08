@@ -31,7 +31,7 @@ h1{
   text-align: center;
   color:rgb(0, 0, 0) ;
 }
-.img{
+.bg{
   width: 100%;
   height: 100vh;
 }
@@ -88,7 +88,12 @@ h1{
   height: 30vh;
 }
 .MAIN{
-  background-color: #f8801710;
+  background-color: #f7f7f710;
+}
+.container{
+  text-align: center;
+  width: 50%;
+  margin-left: 350px;
 }
 
 

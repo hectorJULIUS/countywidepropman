@@ -21,3 +21,21 @@ button {
 
 
 }
+.container{
+  display: flex;
+}
+
+.img{
+  margin-left: 100px;
+  height: 400px;
+  width: 400px;
+}
+.cont-card{
+  margin-left: 200px;
+  width: max-content;
+}
+.sev{
+  display: flex;
+}
+
+

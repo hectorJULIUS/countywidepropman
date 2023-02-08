@@ -7,6 +7,7 @@ import Box from '@mui/material/Box';
 import AssuredWorkloadIcon from '@mui/icons-material/AssuredWorkload';
 import About from './About';
 import Services from './Services';
+import ContactUs from './ContactUs';
 
 
 
@@ -18,7 +19,8 @@ function Home() {
       
       <ImageSection/>
       <About/>
-      <Services/>
+    
+      <ContactUs/>
 
       </container>
       

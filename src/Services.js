@@ -1,11 +1,16 @@
 import React from 'react'
+import './css/reglog.css';
+import sev from './images/sev1.svg'
 
 function Services() {
   return (
-    <div>
+    <div className='sev'>
         <h1>
         Services
         </h1>
+
+      <div><img className='image' src={sev}/></div>
+      <div></div>
     </div>
   )
 }

@@ -4,7 +4,7 @@ export default class ImageSection extends Component {
   render() {
     return (
       <div>
-        <img className='img' src={student}/>
+        <img className='bg' src={student}/>
       </div>
     )
   }

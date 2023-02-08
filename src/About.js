@@ -7,7 +7,6 @@ import rep from './images/rep.jpg';
 function About() {
   return (
     <div className='MAIN' >
-      <hr></hr>
       <h1>About Us</h1>
      <div className='about'>
       
