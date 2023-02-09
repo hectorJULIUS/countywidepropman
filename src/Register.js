@@ -3,15 +3,29 @@ import './css/reglog.css';
 import { Button, Card, CardContent } from '@mui/material';
 import { Box } from '@mui/system';
 import { TextField } from '@mui/material';
+import axios from 'axios';
 
 function Register() {
   const [Username,setUsername]= useState('Hector');
   const [email, setEmail]= useState('');
   const [password, setPassword]= useState('');
-  const signUp = e =>{
+  const signUp = async (e) => {
     e.preventDefault();
-    console.log(Username , email , password);
+    // console.log(Username , email , password);
+    const user = {
+      username: Username,
+      email: email,
+      password: password
+    }
+    try {
+      const response = await axios.post('http://localhost:5000/users', user);
+      console.log(response);
+    } catch (error) {
+      console.log(error);
+    }
   }
+
+  
   return (
     <Box  className='box'
     component="form"
