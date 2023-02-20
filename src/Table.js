@@ -28,7 +28,7 @@ function Table() {
               <td>{item.id}</td>
             <td>{item.title}</td>
             <td>{item.body}</td>
-            <td>Edit</td>
+            <td>change</td>
             <td>Delete</td>
 
             </tr>
