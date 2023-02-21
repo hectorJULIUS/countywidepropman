@@ -10,6 +10,7 @@ import Table from './Table';
 import Footer from './Footer';
 import Services from './Services.js';
 import ContactUs from './ContactUs.js';
+import Navbar from './components';
 
 
 

@@ -9,7 +9,7 @@ function Services() {
         Services
         </h1>
 
-      <div><img className='image' src={sev}/></div>
+      <div><img alt='pre' className='image' src={sev}  /></div>
       <div></div>
     </div>
   )
