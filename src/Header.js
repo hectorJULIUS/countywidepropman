@@ -14,7 +14,7 @@ function Header(){
     return(
         <div >
 
-      <AppBar  position="static" className='top-nav'   sx={{ height:'80px' }} >
+      <AppBar  position="static" className='top-nav'   sx={{ height:'81px' }} >
       <Toolbar  >
         
         <Typography className='logo'>
