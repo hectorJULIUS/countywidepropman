@@ -6,19 +6,24 @@ import Button  from '@mui/material/Button';
 import { Card, CardContent, TextField , Link} from '@mui/material';
 import { Box } from '@mui/system';
 import {Link as RouterLink} from "react-router-dom";
+import axios from 'axios';
 
 
 function LogIn(props) {
   const  navigate = useNavigate();
   const [Username, setUsername] = useState('Hector');
   const [password, setPassword] = useState();
-  const LogIn = e =>{
+  const LogIn = async e =>{
       e.preventDefault();
         console.log(Username);
-        navigate('/DashBoard');
-        props.loginStatus.setIsLoggedIn(true);
-        console.log(props.loginStatus.isLoggedIn)
-        
+        try {
+          axios.post('http://localhost:8000/api/v1/login', { username: Username, password: password });
+          navigate('/DashBoard');
+          props.loginStatus.setIsLoggedIn(true);
+          console.log(props.loginStatus.isLoggedIn)
+        } catch (error) {
+          console.log(error);
+        }
   }
   return (
     <Box className='box'

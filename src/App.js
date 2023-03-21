@@ -1,4 +1,4 @@
-import Header from './Header.js';
+import Header from './componets/Navbar/Header.js';
 import { BrowserRouter , Routes, Route} from 'react-router-dom';
 import About from './About';
 import Home from './Home';

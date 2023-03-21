@@ -1,5 +1,5 @@
 import React from 'react'
-import Header from './Header'
+import Header from './componets/Navbar/Header.js'
 import './css/Header.css';
 import ImageSection from './ImageSection';
 import Grid from '@mui/material/Grid';
