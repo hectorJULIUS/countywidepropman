@@ -9,27 +9,22 @@ function Register() {
   const [Username,setUsername]= useState('Hector');
   const [email, setEmail]= useState('');
   const [password, setPassword]= useState('');
-  const signUp = async (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // console.log(Username , email , password);
-    const user = {
-      username: Username,
-      email: email,
-      password: password
-    }
-    try {
-      const response = await axios.post('http://localhost:5000/users', user);
-      console.log(response);
-    } catch (error) {
-      console.log(error);
-    }
-  }
+    console.log(`${Username}  ${email}  ${password}`);
+        try {
+          axios.post('http://localhost:8000/api/v1/signup', {username: Username, email: email, password: password});
+      } catch (error) {
+          console.log(error);
+      }
+
+  };
 
   
   return (
     <Box  className='box'
     component="form"
-    onSubmit={signUp}
+    onSubmit={handleSubmit}
     sx={{
       '& > :not(style)': { m: 1, width: '25ch' },
     }}

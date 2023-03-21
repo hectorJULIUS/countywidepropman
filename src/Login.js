@@ -7,21 +7,23 @@ import { Card, CardContent, TextField , Link} from '@mui/material';
 import { Box } from '@mui/system';
 import {Link as RouterLink} from "react-router-dom";
 
-function LogIn(props) {
-  const navigate = useNavigate();
-  const [Username,setUsername]= useState('Hector');
-  const [password, setPassword]= useState('');
 
-  const login = e => {
-    e.preventDefault();
-    console.log(Username);
-    props.loginStatus.setIsLoggedIn(true);
-    navigate('/dashboard')
+function LogIn(props) {
+  const  navigate = useNavigate();
+  const [Username, setUsername] = useState('Hector');
+  const [password, setPassword] = useState();
+  const LogIn = e =>{
+      e.preventDefault();
+        console.log(Username);
+        navigate('/DashBoard');
+        props.loginStatus.setIsLoggedIn(true);
+        console.log(props.loginStatus.isLoggedIn)
+        
   }
   return (
     <Box className='box'
     component="form"
-    onSubmit={login}
+    onSubmit={LogIn}
     sx={{
       '& > :not(style)': { m: 1, width: '25ch' },
     }}
