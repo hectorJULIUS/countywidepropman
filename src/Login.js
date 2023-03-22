@@ -9,16 +9,19 @@ import {Link as RouterLink} from "react-router-dom";
 import axios from 'axios';
 
 
-function LogIn(props) {
+function Login(props) {
   const  navigate = useNavigate();
   const [Username, setUsername] = useState('Hector');
   const [password, setPassword] = useState();
-  const LogIn = async e =>{
+  const handleLogin = async e =>{
       e.preventDefault();
         console.log(Username);
         try {
-          axios.post('http://localhost:8000/api/v1/login', { username: Username, password: password });
-          navigate('/DashBoard');
+         const response = await axios.post('http://localhost:8000/api/v1/login', { username: Username, password: password });
+         const { token } = response.data;
+         localStorage.setItem('authToken', token);
+         console.log(token);
+          navigate('/dashboard');
           props.loginStatus.setIsLoggedIn(true);
           console.log(props.loginStatus.isLoggedIn)
         } catch (error) {
@@ -28,7 +31,7 @@ function LogIn(props) {
   return (
     <Box className='box'
     component="form"
-    onSubmit={LogIn}
+    onSubmit={handleLogin}
     sx={{
       '& > :not(style)': { m: 1, width: '25ch' },
     }}
@@ -48,7 +51,6 @@ function LogIn(props) {
           id="outlined-required"
           label ="Username"
           value={Username} onChange={e => setUsername(e.target.value)} type="text"
-          defaultValue="Username"
         /> <br/>
         <br/>
       
@@ -77,4 +79,4 @@ function LogIn(props) {
   );
 };
 
-export default LogIn
+export default Login

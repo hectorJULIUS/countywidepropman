@@ -5,7 +5,9 @@ import { Box } from '@mui/system';
 import { TextField } from '@mui/material';
 import axios from 'axios';
 
+
 function Register() {
+  
   const [Username,setUsername]= useState('Hector');
   const [email, setEmail]= useState('');
   const [password, setPassword]= useState('');
@@ -14,7 +16,8 @@ function Register() {
     console.log(`${Username}  ${email}  ${password}`);
         try {
           axios.post('http://localhost:8000/api/v1/signup', {username: Username, email: email, password: password});
-      } catch (error) {
+      
+        } catch (error) {
           console.log(error);
       }
 

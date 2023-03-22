@@ -22,14 +22,14 @@ function App() {
      <div className="App">
       {isLoggedIn ? <h1></h1> :<Header/>}
       {isLoggedOut && <DashBoard/>}
-      
+       
 
       <Routes>
         <Route path="/About" element ={<About/>} />
         <Route path="/Services" element ={<Services/>} />
         <Route path="/ContactUs" element ={<ContactUs/>} />
         <Route path="/" element ={<Home/>} />
-        <Route path="/login" element ={<Login loginStatus={{isLoggedIn ,setIsLoggedIn }}/>} />
+        <Route path="/Login" element ={<Login loginStatus={{isLoggedIn ,setIsLoggedIn }}/>} />
         <Route path="/Register" element ={<Register/>} />
         <Route path="/dashboard" element={<DashBoard logoutStatus={{isLoggedOut ,setIsLoggedOut }}/>}/>
         <Route path ="/Table" element={<Table/>}/>
