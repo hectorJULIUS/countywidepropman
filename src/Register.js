@@ -4,10 +4,11 @@ import { Button, Card, CardContent } from '@mui/material';
 import { Box } from '@mui/system';
 import { TextField } from '@mui/material';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 
 function Register() {
-  
+  const  navigate = useNavigate();
   const [Username,setUsername]= useState('Hector');
   const [email, setEmail]= useState('');
   const [password, setPassword]= useState('');
@@ -16,6 +17,7 @@ function Register() {
     console.log(`${Username}  ${email}  ${password}`);
         try {
           axios.post('http://localhost:8000/api/v1/signup', {username: Username, email: email, password: password});
+          navigate('/Login')
       
         } catch (error) {
           console.log(error);

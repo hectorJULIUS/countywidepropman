@@ -31,14 +31,13 @@ return (
 			About
 		</NavLink>
 		<NavLink to='/Services' activeStyle>
-			Events
+			Services
 		</NavLink>
+
+		<NavBtn>
+		<NavBtnLink to='/Register'>SignUp</NavBtnLink>
+		</NavBtn>
 		
-		<NavLink to='/Register' activeStyle>
-			Sign Up
-		</NavLink>
-		{/* Second Nav */}
-		{/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
 		</NavMenu>
 		<NavBtn>
 		<NavBtnLink to='/Login'>LogIn</NavBtnLink>
