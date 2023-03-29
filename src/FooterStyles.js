@@ -8,7 +8,10 @@ bottom: 0;
 width: 100%;
 
 
-@media (max-width: 1000px) {
+
+
+
+@media (man-width: 1000px) {
 	padding: 70px 30px;
 }
 `;
@@ -42,10 +45,13 @@ grid-gap: 20px;
 `;
 
 export const FooterLink = styled.a`
-color: #fff;
+color: black;
 margin-bottom: 20px;
 font-size: 18px;
 text-decoration: none;
+
+align-items:center;
+
 
 &:hover {
 	color: green;

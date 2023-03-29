@@ -36,12 +36,10 @@ return (
 
 		<NavBtn>
 		<NavBtnLink to='/Register'>SignUp</NavBtnLink>
+		<NavBtnLink to='/Login'>LogIn</NavBtnLink>
 		</NavBtn>
 		
 		</NavMenu>
-		<NavBtn>
-		<NavBtnLink to='/Login'>LogIn</NavBtnLink>
-		</NavBtn>
 	</Nav>
 	</>
 );

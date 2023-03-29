@@ -6,6 +6,8 @@ export const Nav = styled.nav`
 background: #F88017;
 height: 85px;
 display: flex;
+// position:fixed;
+// width:100%;
 justify-content: space-between;
 padding: 0.2rem calc((100vw - 1000px) / 2);
 z-index: 12;
@@ -14,7 +16,7 @@ z-index: 12;
 `;
 
 export const NavLink = styled(Link)`
-color: #808080;
+color: black;
 display: flex;
 align-items: center;
 text-decoration: none;
@@ -42,6 +44,7 @@ color: #808080;
 
 export const NavMenu = styled.div`
 display: flex;
+color: black;
 align-items: center;
 margin-right: -24px;
 /* Second Nav */

@@ -18,6 +18,7 @@ button {
   color: white;
   padding-top: 10vh;
   padding-bottom: 10vh;
+  
 
 
 }
@@ -36,6 +37,17 @@ button {
 }
 .sev{
   display: flex;
+}
+.box{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+}
+@media (max-width:767px){
+  .box{padding: 20px;}
 }
 
 
